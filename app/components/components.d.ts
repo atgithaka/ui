@@ -15,6 +15,14 @@ declare global {
 
     }
 
+    interface NameUrl {
+
+        name : string ;
+
+        URL : string ;
+
+    }
+
 } ;
 
 export {} ;
