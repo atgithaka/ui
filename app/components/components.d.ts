@@ -9,6 +9,12 @@ declare global {
 
     }
 
+    interface ContainerProps extends ChildrenProps {
+
+        style ? : string ;
+
+    }
+
 } ;
 
 export {} ;

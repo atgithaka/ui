@@ -13,7 +13,7 @@ export default function Aside ( { children } : ChildrenProps ) {
 
             <Brand />
 
-            <Container>
+            <Container style = "container-aside" >
 
                 { children }
 

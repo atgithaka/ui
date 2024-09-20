@@ -13,7 +13,7 @@ export default function Main ( { children } : ChildrenProps ) {
 
             <Header />
 
-                <Container>
+                <Container style = "container-main" >
                     
                     { children }
 
