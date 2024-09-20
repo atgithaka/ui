@@ -1,6 +1,8 @@
 
 import styles from  "../../page.module.css" ;
 
+import Container from "./Container";
+
 import Header from "./Header" ;
 
 export default function Main ( { children } : ChildrenProps ) {
@@ -11,11 +13,11 @@ export default function Main ( { children } : ChildrenProps ) {
 
             <Header />
 
-            <div className = { styles .container } >
+                <Container>
+                    
+                    { children }
 
-                { children }
-
-            </div>
+                </Container>
 
         </main>
 

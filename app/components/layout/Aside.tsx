@@ -1,11 +1,25 @@
 
 import styles from "../../page.module.css" ;
 
-export default function Aside () {
+import Brand from "../ui/Brand" ;
+
+import Container from "./Container" ;
+
+export default function Aside ( { children } : ChildrenProps ) {
 
     return (
 
-        <aside className = { styles.aside } ></aside>
+        <aside className = { styles.aside } >
+
+            <Brand />
+
+            <Container>
+
+                { children }
+
+            </Container>
+
+        </aside>
 
     ) ;
 
