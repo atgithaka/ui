@@ -1,9 +1,11 @@
 
+import styles from "../../page.module.css" ;
+
 export default function Header () {
 
     return (
 
-        <header></header>
+        <header className = { styles .header } ></header>
 
     ) ;
 

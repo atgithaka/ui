@@ -1,11 +1,21 @@
 
+import styles from  "../../page.module.css" ;
+
+import Header from "./Header" ;
+
 export default function Main ( { children } : ChildrenProps ) {
 
     return (
 
-        <main>
+        <main className = { styles .main } >
 
-            { children }
+            <Header />
+
+            <div className = { styles .container } >
+
+                { children }
+
+            </div>
 
         </main>
 
