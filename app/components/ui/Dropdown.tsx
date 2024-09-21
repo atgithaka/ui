@@ -9,9 +9,9 @@ import styles from "../../page.module.css" ;
 
 export default function Dropdown ( { children } : ChildrenProps ) {
 
-    const [ over , setOver ] = useState ( false ) ;
+    const [ over , setOver ] = useState ( true ) ;
 
-    const [ toogle , setToogle ] = useState ( false ) ;
+    const [ toogle , setToogle ] = useState ( true ) ;
 
     function enterTitle () {
 
@@ -35,7 +35,7 @@ export default function Dropdown ( { children } : ChildrenProps ) {
 
         <div className = { styles .dropdown } >
 
-            <div className = { `${ styles .dropdownTitle } ${ !toogle || over ? styles .dropdownTitleActive : "" } }` } onMouseEnter = { enterTitle } onMouseLeave = { leaveTitle } onClick = { openDropdown } >
+            <div className = { `${ styles .dropdownTitle } ${ !toogle || !over ? styles .dropdownTitleActive : "" } }` } onMouseEnter = { enterTitle } onMouseLeave = { leaveTitle } onClick = { openDropdown } >
 
                 <p>
 
@@ -43,7 +43,7 @@ export default function Dropdown ( { children } : ChildrenProps ) {
 
                 </p>
 
-                { !toogle || over ? <Image src = { "/icons/chevron-down-white.svg" } alt = "Chevron Down" width = { 50 } height = { 50 } /> : <Image src = { "/icons/chevron-down-black.svg" } alt = "Chevron Down" width = { 50 } height = { 50 } /> }
+                { !toogle || !over ? <Image src = { "/icons/chevron-down-white.svg" } alt = "Chevron Down" width = { 50 } height = { 50 } /> : <Image src = { "/icons/chevron-down-black.svg" } alt = "Chevron Down" width = { 50 } height = { 50 } /> }
 
             </div>
 
